@@ -6,11 +6,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get("/jobs", [JobController::class, "list"]);
 
-Route::get("/job/{id}", [JobController::class, "view"]);
+Route::get("/jobs/{id}", [JobController::class, "view"]);
 
-Route::get("/job/create", [JobController::class, "create"]);
+Route::post("/jobs/create", [JobController::class, "create"]);
 
-Route::get("/job/edit/{id}", [JobController::class, "edit"]);
+Route::put("/jobs/edit/{id}", [JobController::class, "edit"]);
 
-Route::get("/job/delete/{id}", [JobController::class, "delete"]);
+Route::delete("/jobs/delete/{id}", [JobController::class, "delete"]);
 

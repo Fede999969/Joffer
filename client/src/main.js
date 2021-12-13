@@ -11,22 +11,26 @@ import JobCreate from './components/JobCreate.vue'
 
 const routes = [
   {
+    path: "",
+    redirect: "/jobs",
+  },
+  {
     path: "/jobs",
     name: "jobs_list",
     component: JobsList
   },
   {
-    path: "/job/{id}",
+    path: "/jobs/:id",
     name: "job_view",
     component: JobView
   },
   {
-    path: "/job/create",
+    path: "/jobs/create",
     name: "job_create",
     component: JobCreate
   },
   {
-    path: "/job/edit/{id}",
+    path: "/jobs/edit/:id",
     name: "job_edit",
     component: JobCreate
   },

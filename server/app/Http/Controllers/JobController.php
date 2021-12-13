@@ -22,7 +22,7 @@ class JobController extends Controller
         $newJob = new Job();
         
         $newJob->linguaggiodiprogrammazione = $newJobData->linguaggiodiprogrammazione;
-        $newJob->fotolinguaggio = $newJobData->fotolinguaggio;
+        $newJob->fotologolinguaggio = $newJobData->fotologolinguaggio;
         $newJob->aziendaofferente = $newJobData->aziendaofferente;
         $newJob->ral = $newJobData->ral;
         $newJob->livellodiesperienza = $newJobData->livellodiesperienza;
@@ -38,7 +38,7 @@ class JobController extends Controller
         $newJobData = json_decode($request->getContent());
 
         $job->linguaggiodiprogrammazione = $newJobData->linguaggiodiprogrammazione;
-        $job->fotolinguaggio = $newJobData->fotolinguaggio;
+        $job->fotologolinguaggio = $newJobData->fotologolinguaggio;
         $job->aziendaofferente = $newJobData->aziendaofferente;
         $job->ral = $newJobData->ral;
         $job->livellodiesperienza = $newJobData->livellodiesperienza;
